@@ -16,18 +16,18 @@ Additionally, it is necessary to developer more level abstractions to describe c
 
 Hence, the main idea is to develop a higher level of abstraction language based on this generalisation. This will allow software engineers to learn to write circuits faster, and to experienced circuit developers to focus on the what instead of the how.
 
-![[Howwhat.svg]]
+![Howwhat](img/Howwhat.svg)
 
 
 ## Rotations between steps
 
 If each step has the same number of rows `h` we can have a type of SuperRotation between the steps, where the plonkish prover rotation is equal to the base rotation of the signal in the step plus the number of steps we want to rotate over multiplied by `h`.
 
-![[SuperColumns.svg]]
+![SuperColumns](img/SuperColumns.svg)
 
 It is more interesting for us the case when the steps has different heights. It is not possible to do what we have shown, but a more restricted version of this is possible. In each step we can know the height of the SuperRow of that step, if some cells are common between steps and are aligned at the top, we can query same cell of exactly the next step. Likewise, if some cells are common between steps and are aligned at the bottom.
 
-![[Forward and backward signals.svg]]
+![Forward and backward signals](img/Forward%20and%20backward%20signals.svg)
 
 ## Terminology
 
@@ -181,13 +181,13 @@ The witness is created by adding step instances in order, the SuperRows are crea
 
 ### Developer view
 
-![[Developer abstraction.svg]]
+![Developer abstraction](img/Developer%20abstraction.svg)
 
 
 ### Plonkish arithmetization
 
 
-![[Plonkish arith.svg]]
+![Plonkish arith](img/Plonkish%20arith.svg)
 
 
 ## Real life example: Bytecode circuit
